@@ -1,0 +1,11 @@
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+.git
+
+__pycache__
+
+.envrc
+
+config.py

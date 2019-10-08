@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <p><a href="https://github.com/login/oauth/authorize?client_id={{client_id}}">List your public github repos.</a></p>
+        {% if repos %}
+        <p>
+        <ul>
+            {% for i in repos %}
+            <li>{{ i.name }}</li>
+            {% endfor %}
+        </ul>
+        </p>
+        <p><a href="/?page={{next_page}}">Page {{next_page}}</a></p>
+        {% endif %}
+        <p>Created by <a href="http://ei-grad.ru">Andrew Grigorev</a>, source code: <a href="https://github.com/ei-grad/sherelone">https://github.com/ei-grad/sherelone</a>.</p>
